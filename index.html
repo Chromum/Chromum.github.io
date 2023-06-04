@@ -1,43 +1,121 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<title>Cool Message for Josh Wootton</title>
-	<style>
-		body {
-			background-color: #000;
-			color: #fff;
-			font-family: Arial, sans-serif;
-			text-align: center;
-			padding-top: 50px;
-			overflow: hidden; /* hide any content that overflows the body */
-		}
-
-		h1 {
-			font-size: 4rem;
-			margin-bottom: 30px;
-			position: absolute; /* position the heading absolutely so it doesn't affect the flow of other elements */
-			left: 100%; /* start the heading off-screen to the right */
-			animation: slide 10s linear infinite; /* use the slide animation for 10 seconds, looping indefinitely */
-		}
-
-		p {
-			font-size: 2rem;
-			margin-bottom: 50px;
-		}
-
-		.heart {
-			color: #ff007f;
-			font-size: 5rem;
-			margin-bottom: 30px;
-		}
-
-		@keyframes slide { /* define the slide animation */
-			from { left: 100%; } /* start off-screen to the right */
-			to { left: -100%; } /* slide all the way to the left */
-		}
-	</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="Style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-	<h1>You Know Who Smells...Josh Wootton Smells BAD</h1>
-    <h3>YOU KNOW WHOS THE WORST SIEGE PLAYER... JOSH WOOTTON SMELLS BAD</h3>
+  <header>
+    <div id="Title"><strong>Samuel Green Portfolio</strong></div>
+    <div id="Navbar">
+       <a href="#about">About</a>
+       <a href="#projects">Projects</a><a href="#projects2">Modding</a>
+     </div>
+  </header>
+
+<section id="AboutSection">
+	<div id="about">
+		<div id="AboutTitle"><strong>About Me</strong></div>
+	  <div class="AboutContentClass" id="AboutContent">
+   				<img src="MyFace.png" alt="My Face" width="250" height="250" class="AboutSection-Da">
+   				
+   				<div id="AboutText">
+   				  <p>I am a games programmer currently studying at Leeds City College. I Have over 5years experience using the Unity Engine dabbleing in Java and C#. Mainly focusing on the use of C# within the engine within the past few years, my main focus is creating VR experiences, AI systems and first person shooters. Throughout the time i have spent at Leeds City College i have learnt to use Blueprints in the Unreal Engine creating little games as Projects. The project i have spent the most time developing is <a href="Project1.html">Wormega</a> a First Person rougelike this shows off some of my best work so be sure to check it out! </p>
+   				  <p><br>			
+			      </p>
+                </div>
+  			</div>
+	</div>
+</section>
+
+<section id="ProjectsTitle">
+	  <h1>&nbsp;</h1>
+	  <h1>Games Made</h1>
+  </section>
+<section id="projects">
+  	<div class="project">
+      <a href="project1.html">
+        <img src="Wormega.jpeg" alt="Project 1">
+        <div class="overlay">
+        	<div id="ProjectName">Wormega</div>
+			<div class="TypeImages">
+				<img src="CSharpIcon.png" alt="Project made with c#" class="img2">
+				<img src="ShaderGraphIcon.png" alt="Project made with c#" class="img2">
+				
+			</div>
+		  <div id="ProjectText">
+			  Traverse the rooftops of Neo Leeds and upgrade your gun and collect cybernetic attachments!
+			  <h1>Roles:</h1>
+			<li> Project Lead</li>
+			<li> Lead Programmer </li>
+			<li> 3D Modeller</li>
+			<li> UI Designer</li>
+			<li> Voice Acting</li>
+			
+			</div>
+			
+		</div>
+      </a>
+    </div>
+	<div class="project">
+      <a href="project1.html">
+        <img src="Mafia.jpeg" alt="Project 1">
+        <div class="overlay">
+        	<div id="ProjectNameMafia">Mafia Satan Reckoning</div>
+			<div class="TypeImages">
+				<img src="CSharpIcon.png" alt="Project made with c#" class="img2">
+				
+			</div>
+		  <div id="ProjectText">
+			  This is a game where you enter Hell to take down Satan's infamous mafia by going straight to the Capo de tutti capi. The only problem is, in this pit of Hell, everything is very fragile.
+			  <h1>Roles:</h1>
+			<li> Programmer </li>
+			<li> Voice Acting</li>
+			
+			</div>
+			
+		</div>
+      </a>
+    </div>
+</section>
+<section id="ProjectsTitle2">
+    <h1>&nbsp;</h1>
+    <h1>Modding Related Projects</h1>
+</section>
+<section id="projects2">
+    <div class="project"> <a href="project1.html"> <img src="project1.jpeg" alt="Project 1">
+      <div class="overlay">
+        <div id="ProjectName2">BMT</div>
+        <div class="TypeImages"> <img src="CSharpIcon.png" alt="Project made with c#" class="img2"> <img src="MelonLoaderIcon.png" alt="Project made with c#" class="img2"> </div>
+        <div id="ProjectText2">A collection of useful functions and tools for modding the VR game boneworks&nbsp;</div>
+      </div>
+    </a> </div>
+	<div class="project"> <a href="project1.html"> <img src="project1.jpeg" alt="Project 1">
+      <div class="overlay">
+        <div id="ProjectName2">
+			Custom Items Framework
+		</div>
+        <div class="TypeImages"> 
+			<img src="CSharpIcon.png" alt="Project made with c#" class="img2">
+		  	<img src="MelonLoaderIcon.png" alt="Project made with c#" class="img2">
+		</div>
+        <div id="ProjectText2">
+			Mod created alongside BMT that allows users to load and import new guns, melee weapons, NPCs, random props, and more!
+		 </div>
+      </div>
+    </a>
+	</div>
+
+
+  </section>
+<footer>
+  <p>&copy; 2023 Sam Green. All rights reserved.</p>
+  </footer>
 </body>
+
 </html>
